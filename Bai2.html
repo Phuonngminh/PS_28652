@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"
+    />
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    .Logo {
+      text-shadow: 2px 1px red;
+      font-size: 1.5em;
+    }
+    .white {
+      color: white !important;
+      font-size: 2em !important;
+    }
+    hr {
+      margin: 0;
+    }
+    .fa-solid {
+      font-size: 1.5em;
+      margin-right: 0.5em;
+    }
+    .breadcrumb {
+      background-color: rgb(189, 189, 189);
+      margin: 2em;
+      border-radius: 8px;
+      padding: 0.4em;
+    }
+    .breadcrumb > li > a {
+      text-decoration: none !important;
+    }
+    .font {
+      font-size: 1.5em;
+    }
+    a {
+      text-decoration: none;
+      align-items: center;
+    }
+
+    tr {
+      text-align: center;
+      vertical-align: middle;
+    }
+    .table {
+      background-color: #d3d8dd;
+    }
+    .lh-xxl {
+      margin: 10px 0;
+    }
+    .mau1 {
+      color: rgb(147, 196, 73);
+    }
+    .mau2 {
+      color: brown;
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <span class="navbar-text"> Phone </span>
+
+        <span class="d-flex">
+          <i class="fa-solid fa-phone"></i> 0844797777
+        </span>
+      </div>
+    </nav>
+    <hr />
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand Logo" href="index.html">
+              <img
+                src="images/Logo2.png"
+                alt="Logo"
+                width="50"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+              RDR2
+            </a>
+          </div>
+        </nav>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sản phẩm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Súng trường</a></li>
+                  <li><a class="dropdown-item" href="#">Súng lục</a></li>
+                  <li><a class="dropdown-item" href="#">Súng tiểu liên</a></li>
+                  <li><a class="dropdown-item" href="#">Dao</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Nhu yếu phẩm</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav me-auto hide">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Add to cart
+                  <strong>(210$)</strong>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Giỏ hàng</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Thanh toán</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active ms-3" aria-current="page">
+          Trang chủ
+        </li>
+        <li class="breadcrumb-item active ms-3" aria-current="page">/</li>
+        <li class="breadcrumb-item"><a href="#">Súng trường</a></li>
+      </ol>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-2 flex-grow-1 bd-highlight font">
+            <i class="fa-solid fa-cart-shopping"></i> Shopping cart
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="p-2 flex-grow-1 bd-highlight font d-flex justify-content-md-end"
+          >
+            <a class="" href="">
+              <i class="fa-solid fa-chevron-left"></i>Quay về trang chủ</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex bd-highlight">
+      <div class="p-2 flex-grow-1 bd-highlight font">
+        <i class="fa-solid fa-cart-shopping"></i> Shopping cart
+      </div>
+      <div class="p-2 flex-grow-1 bd-highlight font">
+        <a class="mx-3" href="">
+          <i class="fa-solid fa-chevron-left"></i>Quay về trang chủ</a
+        >
+      </div>
+    </div> -->
+    <div class="container-fulid">
+      <div class="row">
+        <div class="col-xl-9 left">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Hình ảnh</th>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col"></th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Giảm giá</th>
+                <th scope="col">Tổng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="col-lg">
+                    <img src="images/SanPham.jpg" width="100%" alt="" />
+                  </div>
+                </th>
+                <td>G-63</td>
+                <td><i class="fa-solid fa-trash"></i></td>
+                <td>2</td>
+                <td>0</td>
+                <td>300$</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="col-lg">
+                    <img
+                      src="images/SanPham.jpg"
+                      class=""
+                      width="100%"
+                      alt=""
+                    />
+                  </div>
+                </th>
+                <td>L-06</td>
+                <td><i class="fa-solid fa-trash"></i></td>
+                <td>5</td>
+                <td>20%</td>
+                <td>500$</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="col-lg">
+                    <img src="images/SanPham.jpg" width="100%" alt="" />
+                  </div>
+                </th>
+                <td>G225</td>
+                <td><i class="fa-solid fa-trash"></i></td>
+                <td>3</td>
+                <td>70%</td>
+                <td>40$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-xl-3 bg-light right">
+          <div class="m-3">
+            <div class="middle my-3">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-block w-100"
+              >
+                Proceed to checkout <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-body">
+                <li
+                  class="list-group-item d-flex justify-content-between lh-xxl"
+                >
+                  <div>
+                    <h6 class="my-0">Toal products</h6>
+                  </div>
+                  <span class="text-body-secondary"
+                    ><strong>$216.51</strong></span
+                  >
+                </li>
+                <hr />
+                <li
+                  class="list-group-item d-flex justify-content-between lh-xxl"
+                >
+                  <div>
+                    <h6 class="my-0">Shipping</h6>
+                  </div>
+                  <span class="text-body-secondary"
+                    ><strong class="mau2">Free shipping!</strong></span
+                  >
+                </li>
+                <hr />
+                <li
+                  class="list-group-item d-flex justify-content-between lh-xxl"
+                >
+                  <div>
+                    <h6 class="my-0">Toal (tax excl)</h6>
+                  </div>
+                  <span class="text-body-secondary"
+                    ><strong>$216.51</strong></span
+                  >
+                </li>
+                <hr />
+                <li
+                  class="list-group-item d-flex justify-content-between lh-xxl"
+                >
+                  <div>
+                    <h6 class="my-0">Toal tax</h6>
+                  </div>
+                  <span class="text-body-secondary"
+                    ><strong>$0.00</strong></span
+                  >
+                </li>
+                <hr />
+                <li
+                  class="list-group-item d-flex justify-content-between lh-xxl"
+                >
+                  <div>
+                    <h6 class="my-0">Toal</h6>
+                  </div>
+                  <span class="text-body-secondary"
+                    ><strong class="mau1">$900</strong></span
+                  >
+                </li>
+
+                <form class="row mt-3">
+                  <div class="col">
+                    <label for="inputPassword2" class="visually-hidden"
+                      >Password</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputPassword2"
+                      placeholder="config code"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      Apply
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block"></div>
+
+        <div>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>RDR2
+              </h6>
+              <p>Chứng nhận giấy phép bán súng</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Liên hệ</h6>
+              <p>
+                <a href="#!" class="text-reset">Thông tin đặt hàng</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Chính sách bảo mật</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Chính sách giao hàng</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Thông tin</h6>
+              <p>
+                <a href="#!" class="text-reset">Chủ cửa hàng</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Đăng nhập</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Đăng ký</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Đổi mật khẩu</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Hotline tư vấn</h6>
+              <p><i class="fas fa-home me-3 text-secondary"></i> 09869999**</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                09869999**
+              </p>
+              <p><i class="fas fa-phone me-3 text-secondary"></i> 09869999**</p>
+              <p><i class="fas fa-print me-3 text-secondary"></i> 09869999**</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        © 2022 Copyright
+        <a class="text-reset fw-bold" href=""></a>
+      </div>
+    </footer>
+
+    <style>
+      .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      @media all and (max-width: 992px) {
+        .hide {
+          display: none !important;
+        }
+      }
+    </style>
+  </body>
+</html>
